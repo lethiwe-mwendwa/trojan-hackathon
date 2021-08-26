@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+    <h1>Donees List</h1>
+    <div class="donees">
+        {% for donee in donees%}
+            <div class="donee">
+                <h2><a href="">{{donee.name}}</a></h2>
+                <p>{{ donee.snippet }}</p>
+                <p>{{ donee.email }}</p>
+                <p>{{ donee.contact }}</p>
+                <p>{{ donee.date }}</p>
+            </div>
+        {%endfor%}
+    </div>
+{% endblock %}
