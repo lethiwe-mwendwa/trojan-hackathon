@@ -8,7 +8,7 @@ class donee(models.Model):
     email = models.EmailField()
     contact = models.IntegerField()
     date = models.DateTimeField(auto_now_add=True)
-    # add in thumbnail later
+    thumb = models.ImageField(default='default.png', blank=True)
     # add in author later
 
     def __str__(self):

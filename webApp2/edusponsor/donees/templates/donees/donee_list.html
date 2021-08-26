@@ -4,7 +4,7 @@
     <div class="donees">
         {% for donee in donees%}
             <div class="donee">
-                <h2><a href="">{{donee.name}}</a></h2>
+                <h2><a href="{% url 'donees:detail' slug=donee.slug %}">{{donee.name}}</a></h2>
                 <p>{{ donee.snippet }}</p>
                 <p>{{ donee.email }}</p>
                 <p>{{ donee.contact }}</p>

@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="donee-detail">
+  <div class="donee">
+    <img src="{{donee.thumb.url}}"/>
+    <h2>{{ donee.name }}</h2>
+    <p>{{ donee.message }}</p>
+    <p>{{ donee.email }}</p>
+    <p>{{ donee.contact }}</p>
+    <p>{{ donee.date }}</p>
+  </div>
+</div>
+{% endblock %}
