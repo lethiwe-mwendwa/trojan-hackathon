@@ -1,9 +1,11 @@
 
 body{
-    background-color: #0f121f;
-    background-image: url(/static/stars.png);
+    background-color: #ffffff;
+    background-image: url(/static/bottom.png);
+    background-size: auto;
     background-repeat-y: no-repeat;
-    color: #fff;
+    color: rgb(81, 158, 94);
+
 }
 
 body *{
@@ -93,6 +95,7 @@ nav button{
 .main-display{
     max-width: 1300px;
     margin: 0 auto;
+
 }
 
 .donee{
@@ -100,6 +103,7 @@ nav button{
     border: 3px solid #1d697c;
     position: relative;
     padding-bottom: 40px;
+    background-color: #002944;
 }
 
 
@@ -159,19 +163,6 @@ logout-link{
 
 }
 
-.nav li{
-    background-color: #dc3545; /* Green */
-    border: 0;
-    border-radius: 13px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-
 
 .site-form input,.site-form textarea{
     display: block;
@@ -198,20 +189,18 @@ logout-link{
 .site-form label{
     margin: 0 auto;
 }
-
-.button{
+.nav a{
+    margin-top: 20px;
     background-color: #198754; /* Green */
     border: 0;
     border-radius: 9px;
     color: white;
-    padding: 15px 32px;
-    margin: 0 auto;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-size: 16px;
-  
-  }
+}
 
 .toTop{
     background-color: #198754; /* Green */

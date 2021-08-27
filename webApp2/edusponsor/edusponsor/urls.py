@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^accounts/',include('accounts.urls')),
     url(r'^donees/', include('donees.urls')),
     url(r'^about/$', views.about),
+    url(r'^studentpage/$', views.studentpage),
     url(r'^$', donee_views.donee_list, name="home"),
 ]
 
