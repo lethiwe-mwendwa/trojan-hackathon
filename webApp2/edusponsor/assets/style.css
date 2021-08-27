@@ -145,6 +145,7 @@ logout-link{
 .helptext ul{
     display :block;
 }
+
 .errorlist li{
     padding :10px;
     list-style-type :none;
@@ -197,6 +198,21 @@ logout-link{
 .site-form label{
     margin: 0 auto;
 }
+
+.button{
+    background-color: #198754; /* Green */
+    border: 0;
+    border-radius: 9px;
+    color: white;
+    padding: 15px 32px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  
+  }
+
 .toTop{
     background-color: #198754; /* Green */
     border: 0;
