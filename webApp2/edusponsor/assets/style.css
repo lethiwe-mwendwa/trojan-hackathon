@@ -104,9 +104,7 @@ nav button{
     margin: 20px auto;
 }
 
-.donee-detail .donee p{
 
-}
 
 .des{
     margin-top: 10px;
@@ -132,4 +130,45 @@ nav button{
     padding: 15px;
     border-radius: 5px;
 }
+
+.site-form {
+    margin-top: 60px;
+    border : 1px solid #00dba0;
+    padding :20px;
+}
+
+.helptext, .helptext ul{
+    margin : 0 auto 20px;
+    color :cyan;
+    font-size : 0.9em;
+    display :block;
+    
+
+
+}
+.errorlist li {
+    padding :10px;
+    list-style-type :none;
+    border :1px solid #ff5722;
+    color : #ff5722;
+    margin: 10px 0;
+
+
+}
+
+.errorlist{
+    padding: 0 ;
+
+}
+
+.site-form  input[type ="submit"]{
+    background :#ff1f1f ;
+    border: 0;
+    color: white;
+    font-size :1.2em;
+    border-radius : 4px;
+    margin :10px 0;
+
+}
+
 
