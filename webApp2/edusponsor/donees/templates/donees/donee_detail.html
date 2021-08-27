@@ -5,10 +5,12 @@
   <div class="donee">
     <img src="{{donee.thumb.url}}"/>
     <h2>{{ donee.name }}</h2>
-    <p>{{ donee.message }}</p>
-    <p>{{ donee.email }}</p>
-    <p>{{ donee.contact }}</p>
-    <p>{{ donee.date }}</p>
+    <p class='des'>{{ donee.message }}</p>
+    <p class='email'>{{ donee.email }}</p>
+    {% comment %} <a href=("mailto:"+{{donee.email}}) class='email'>{{ donee.email }}</a> {% endcomment %}
+    <p class='contact'>{{ donee.contact }}</p>
+    <p class='date'>{{ donee.date }}</p>
   </div>
 </div>
+<a class="toTop" href="#">jump to top</a>
 {% endblock %}
