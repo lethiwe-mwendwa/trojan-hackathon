@@ -1,6 +1,7 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
+<div class="main-display">
 <div class="donee-detail">
   <div class="donee">
     <img src="{{donee.thumb.url}}"/>
@@ -12,5 +13,6 @@
     <p class='date'>{{ donee.date }}</p>
   </div>
 </div>
-<a class="toTop" href="#">jump to top</a>
+<a class="toTop" href="#">Jump to top</a>
+</div>
 {% endblock %}

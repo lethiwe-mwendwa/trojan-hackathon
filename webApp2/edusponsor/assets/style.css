@@ -1,6 +1,4 @@
 
-
-
 body{
     background-color: #0f121f;
     background-image: url(/static/stars.png);
@@ -61,7 +59,6 @@ header{
     border-style: solid;
 }
 
-
 nav{
     justify-self:end;
 }
@@ -76,11 +73,26 @@ nav button{
     border: 0;
 }
 
-.donees {
+.donees{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
 
+}
+
+.des{
+    margin-top: 10px;
+    background-color: rgb(190, 196, 195);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+.main-display{
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .donee{
@@ -89,6 +101,7 @@ nav button{
     position: relative;
     padding-bottom: 40px;
 }
+
 
 .donee-detail .donee{
     padding: 0;
@@ -104,17 +117,11 @@ nav button{
     margin: 20px auto;
 }
 
-
-
-.des{
-    margin-top: 10px;
-    background-color: rgb(212, 231, 230);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 5px;
-
+logout-link{
+    background: none;
 }
+
+
 
 .email{
     font-family: 'Oswald', sans-serif, Ubuntu;
@@ -122,38 +129,28 @@ nav button{
 
 }
 
-.toTop{
-    margin-top:60px;
-    background-color: rgb(212, 231, 230);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.site-form {
+.site-form{
     margin-top: 60px;
     border : 1px solid #00dba0;
     padding :20px;
 }
 
-.helptext, .helptext ul{
-    margin : 0 auto 20px;
-    color :cyan;
+.helptext{
+    margin : 0px auto 20px;
+    color :#dc3545;
     font-size : 0.9em;
     display :block;
-    
-
-
 }
-.errorlist li {
+
+.helptext ul{
+    display :block;
+}
+.errorlist li{
     padding :10px;
     list-style-type :none;
     border :1px solid #ff5722;
     color : #ff5722;
     margin: 10px 0;
-
-
 }
 
 .errorlist{
@@ -161,14 +158,64 @@ nav button{
 
 }
 
-.site-form  input[type ="submit"]{
-    background :#ff1f1f ;
+.nav li{
+    background-color: #dc3545; /* Green */
     border: 0;
+    border-radius: 13px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+.site-form input,.site-form textarea{
+    display: block;
+    margin: 0 auto;
+}
+
+.site-form input[type ="submit"]{
+    background :#dc3545 ;
+    border: 0;
+    border-radius: 12px;
     color: white;
     font-size :1.2em;
     border-radius : 4px;
     margin :10px 0;
+    margin: 0 auto;
 
 }
 
+.site-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.site-form label{
+    margin: 0 auto;
+}
+.toTop{
+    background-color: #198754; /* Green */
+    border: 0;
+    border-radius: 9px;
+    color: white;
+    padding: 15px 32px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:60px;
+    align-content: center;
+    max-width: 300px;
+  
+  }
+
+  #toBeCentered{
+    margin: 0 auto;
+  }
 

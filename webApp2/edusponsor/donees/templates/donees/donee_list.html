@@ -1,5 +1,6 @@
 {% extends 'base_layout.html' %}
 {% block content %}
+<div class="main-display">
     <h1>Donees List</h1>
     <div class="donees">
         {% for donee in donees%}
@@ -13,4 +14,5 @@
         {%endfor%}
     </div>
     <a class="toTop" href="#">Jump to top</a>
+</div>
 {% endblock %}

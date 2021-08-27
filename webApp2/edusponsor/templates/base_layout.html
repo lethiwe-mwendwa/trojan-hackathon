@@ -13,7 +13,8 @@
         <header class="wrapper">
             <h1><a href="{% url 'home' %}"><img src="/static/logo.png" alt="edusponsor" style="width:350px;"/></a></h1>
             <nav>
-                <ul>
+                <a class='nav' href="mailto:edusponsors.info@gmail.com">Email Us</a>
+                <ul class='nav'>
                     {% if user.is_authenticated %}
                     <li>
                         <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
