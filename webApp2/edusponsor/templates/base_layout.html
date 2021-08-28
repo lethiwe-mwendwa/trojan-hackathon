@@ -11,15 +11,17 @@
     </head>
     <body>
         <header class="wrapper">
-            <h1><a href="{% url 'home' %}"><img src="/static/logo.png" alt="edusponsor" style="width:350px;"/></a></h1>
+            <h1><a href="{% url 'home' %}"><img id="logo" src="/static/logo.png" alt="edusponsor"/></a></h1>
             <nav>
                 <ul class='nav'>
+                <li><a href="/studentpage">Student Page</a></li>
+                <li><a href="/about">About Us</a></li>
                 <li><a href="mailto:edusponsors.info@gmail.com">Email Us</a></li>
                     {% if user.is_authenticated %}
                     <li>
-                        <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                        <form action="{% url 'accounts:logout' %}" method="post">
                             {% csrf_token %}
-                            <button type="submit">Logout</button>
+                            <button class="logout-link" type="submit">Logout</button>
                         </form>
                     </li>
                     <li><a href="{% url 'donees:create'%}" class="highlight">New Story</a></li>

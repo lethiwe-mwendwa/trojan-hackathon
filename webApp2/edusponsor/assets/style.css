@@ -1,18 +1,30 @@
 
 body{
-    background-color: #ffffff;
-    background-image: url(/static/bottom.png);
-    background-size: auto;
-    background-repeat-y: no-repeat;
-    color: rgb(81, 158, 94);
+    background-color: #ffffff5b;
+    background-image: url(/static/cloud5.jpg);
+    /*
+    cloud2
+    cloud3
+    cloud5 
 
-}
-
-body *{
+    gallery background
     
+    background-color: #74ebd5;
+    background-image: url(/static/bottom.png);
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%); */
+    background-repeat: no-repeat;
+    color: #17ac66;
+    background-position: bottom;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 2000px;
+
 }
+
 
 p{
+    color: #85d4af;
     font-family: 'Oswald', sans-serif, Ubuntu;
     font-size: 20px;
 }
@@ -26,21 +38,22 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 70px;
+
 }
+
+
 
 h2{
-    text-decoration: underline;
-}
-h2:hover{
-    font-weight: 60px;
-    color: aquamarine;
+    text-decoration: none;
 }
 
-a, a:hover, a:visited{
+a{
     color: #fff;
     text-decoration: none;
 }
+
+
 
 .wrapper{
     margin: 0 auto;
@@ -57,12 +70,13 @@ header{
     background-image: linear-gradient(#171125,#002944);
     border: white;
     border-width: 0px;
-    border-bottom: 10px;
+    border-bottom: 9px;
     border-style: solid;
 }
 
 nav{
     justify-self:end;
+    margin-right: 40px;
 }
 
 nav li{
@@ -79,7 +93,7 @@ nav button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
-
+    margin-top: 100px;
 }
 
 .des{
@@ -104,6 +118,7 @@ nav button{
     position: relative;
     padding-bottom: 40px;
     background-color: #002944;
+    border-radius: 20px;
 }
 
 
@@ -121,12 +136,6 @@ nav button{
     margin: 20px auto;
 }
 
-logout-link{
-    background: none;
-}
-
-
-
 .email{
     font-family: 'Oswald', sans-serif, Ubuntu;
     font-size: 20px;
@@ -136,7 +145,7 @@ logout-link{
 .site-form{
     margin-top: 60px;
     border : 1px solid #00dba0;
-    padding :20px;
+    padding :30px;
 }
 
 .helptext{
@@ -178,7 +187,6 @@ logout-link{
     border-radius : 4px;
     margin :10px 0;
     margin: 0 auto;
-
 }
 
 .site-form{
@@ -189,21 +197,28 @@ logout-link{
 .site-form label{
     margin: 0 auto;
 }
-.nav a{
-    margin-top: 20px;
-    background-color: #198754; /* Green */
+.nav a, .logout-link{
+    margin-top: 40px;
+    background-color: #17ac66; /* Green */
     border: 0;
     border-radius: 9px;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
+.nav a:hover, .logout-link:hover{
+    background-color: #53c475; /* Green */
+    color: white;
+    padding: 10px 21px;
+    text-decoration: bolder;
+    font-size: 17px;
+}
 
 .toTop{
-    background-color: #198754; /* Green */
+    background-color: #17ac66; /* Green */
     border: 0;
     border-radius: 9px;
     color: white;
@@ -214,7 +229,8 @@ logout-link{
     display: block;
     font-size: 16px;
     font-weight: bold;
-    margin-top:60px;
+    margin-top:100px;
+    margin-bottom:100px;
     align-content: center;
     max-width: 300px;
   
@@ -224,3 +240,55 @@ logout-link{
     margin: 0 auto;
   }
 
+#logo{
+    width:350px;
+    padding-left: 25px;
+    margin: 5px;
+}
+
+#donee-link:hover{
+    color: rgb(17, 255, 116);
+    text-decoration: underline;
+}
+.container, .donee-container{
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+    border: 10px solid #17ac66;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: #002944;
+    max-width: fit-content;
+    height: fit-content;
+}
+.donee-container{
+    position: relative;
+}
+
+.h1-container{
+    background-color: rgb(211, 211, 211);
+    border-radius: 8px;
+    max-width: fit-content;
+    opacity: 0.9;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.about-container{
+    margin-top: 40px;
+    padding: 10px;
+    border: 10px solid #17ac66;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: #002944;
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.submit{
+    width: 100px;
+    margin-top: 30px;
+    display: block;
+}

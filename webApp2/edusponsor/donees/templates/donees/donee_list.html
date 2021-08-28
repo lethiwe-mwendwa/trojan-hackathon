@@ -1,11 +1,13 @@
 {% extends 'base_layout.html' %}
 {% block content %}
 <div class="main-display">
+    <div class="h1-container">
     <h1>Donees List</h1>
+    </div>
     <div class="donees">
         {% for donee in donees%}
             <div class="donee">
-                <h2><a href="{% url 'donees:detail' slug=donee.slug %}">{{donee.name}}</a></h2>
+                <h2><a class="interactive" href="{% url 'donees:detail' slug=donee.slug %}">{{donee.name}}</a></h2>
                 <p class='des'>{{ donee.snippet }}</p>
                 <p class='email'>{{ donee.email }}</p>
                 <p class='contact'>{{ donee.contact }}</p>

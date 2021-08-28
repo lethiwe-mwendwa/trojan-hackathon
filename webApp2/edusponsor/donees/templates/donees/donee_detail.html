@@ -1,18 +1,38 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
+<style>
+      .SkulPic {
+        height:auto ;
+        float: right;
+        width: auto;
+        border-radius:auto ;
+        margin-right: 15px;
+        margin: 30px;
+        max-width: 450px;
+        border-color: antiquewhite;
+        border-width: 10px;
+        border-style: solid;
+      }
+</style>
 <div class="main-display">
+<div class="donee-container">
 <div class="donee-detail">
-  <div class="donee">
-    <img src="{{donee.thumb.url}}"/>
     <h2>{{ donee.name }}</h2>
+    <img class='SkulPic' src="{{donee.thumb.url}}"/>
     <p class='des'>{{ donee.message }}</p>
+    <br></br>
     <p class='email'>{{ donee.email }}</p>
     {% comment %} <a href=("mailto:"+{{donee.email}}) class='email'>{{ donee.email }}</a> {% endcomment %}
     <p class='contact'>{{ donee.contact }}</p>
     <p class='date'>{{ donee.date }}</p>
-  </div>
+</div>
 </div>
 <a class="toTop" href="#">Jump to top</a>
 </div>
 {% endblock %}
+ 
+
+
+
+
